@@ -1,14 +1,11 @@
 
 Install msgpack 
 
-```bash
-pip install msgpack
-```
 
-Install Predict Atom SDK Python library 
+Install Predict Atom SDK Python library. It will also install dependentcies (msgpack at the moment)
 
 ```bash
-pip install riotsdk -i https://axon-predict.greenwavesystems.com:8082/repository/pypi-releases/simple
+pip install riotsdk -i https://edgedevrepo.greenwavesystems.com/repository/pypi-public/simple
 ```
 when propmted authenticate with your dev portal account
 
