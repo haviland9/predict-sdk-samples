@@ -75,7 +75,7 @@ def query_state_callback(data, error):
 
 
 def main():
-    # Initialise connection to Atom service
+    # Initialize connection to Atom service
     # atom_client = AtomClient('10.2.13.209', 44444)
     atom_client = AtomClient('127.0.0.1', 44444)
 
@@ -89,7 +89,7 @@ def main():
 
     time.sleep(1)
 
-    # Optional timestamp synchronization. Makes sens if you have relative timestamps
+    # Optional timestamp synchronization. Makes sense if you have relative timestamps
     device.synchronize(int(time.time() * 1000))
 
     # Send to Atom command to add new query
