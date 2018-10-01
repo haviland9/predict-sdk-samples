@@ -7,7 +7,7 @@ device_id = str("53300000-0000-0000-0000-000000000042")
 
 
 def main():
-    # Initialise connection to Atom service
+    # Initialize connection to Atom service
     # atom_client = AtomClient('10.2.13.209', 44444)
     atom_client = AtomClient('127.0.0.1', 44444)
 
@@ -18,7 +18,7 @@ def main():
     stream2 = device.add_sensor("stream2", "Second stream", int, 0, 1000000)
 
 
-    # Optional timestamp synchronization. Makes sens if you have relative timestamps
+    # Optional timestamp synchronization. Makes sense if you have relative timestamps
     device.synchronize(int(time.time() * 1000))
 
 
